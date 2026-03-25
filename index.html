@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="php-theme" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">&lt;Felipe Postigo /&gt;</a>
+            
+            <div class="d-flex align-items-center order-lg-3 ms-auto ms-lg-3">
+                <button class="btn btn-link text-light px-2" id="themeToggler" type="button" aria-label="Alternar tema">
+                    <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="d-flex align-items-center bg-body-tertiary min-vh-100">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3">Olá, eu sou Felipe Postigo</h1>
+            <p class="lead mb-4 text-body-secondary">Estudante de Engenharia de Software apaixonado por criar soluções front-end, back-end e full-stack.</p>
+            <a href="#projetos" class="btn btn-primary btn-lg px-4 gap-3">Ver Meus Projetos</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 fw-bold">Sobre Mim</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0 text-center">
+                    <img src="img001.jpg" alt="Minha Foto" class="img-fluid rounded-circle shadow" style="max-width: 280px; border: 5px solid var(--bs-border-color);">
+                </div>
+                <div class="col-md-6">
+                    <p class="lead text-body-secondary">Sou um estudante de Engenharia de Software focado em me desenvolver como programador full-stack.</p>
+                    <p>Tenho facilidade em me comunicar e trabalhar em equipe, sempre buscando aprender novas tecnologias e metodologias. Tenho interesse em atuar tanto na construção de interfaces agradáveis quanto na estruturação de lógicas robustas no servidor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="py-5 bg-body-tertiary">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 fw-bold">Minhas Habilidades</h2>
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <i class="bi bi-window fs-1 text-primary mb-3 d-block"></i>
+                            <h4 class="card-title fw-bold">Front-end</h4>
+                            <p class="card-text text-body-secondary">HTML5, CSS3, JavaScript e Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <i class="bi bi-server fs-1 text-success mb-3 d-block"></i>
+                            <h4 class="card-title fw-bold">Back-end & DB</h4>
+                            <p class="card-text text-body-secondary">PHP, Python, Java (POO), MySQL e SQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <i class="bi bi-tools fs-1 text-danger mb-3 d-block"></i>
+                            <h4 class="card-title fw-bold">Ferramentas</h4>
+                            <p class="card-text text-body-secondary">Git, GitHub e versionamento de código</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 fw-bold">Meus Projetos</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card shadow-sm h-100 bg-body-tertiary border border-secondary-subtle">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">MedConnect</h5>
+                            <h6 class="card-subtitle mb-3 text-primary">Full-Stack</h6>
+                            <p class="card-text text-body-secondary">Projeto acadêmico desenvolvido em equipe para a gestão de unidades de saúde, contando com controle de perfis de acesso, filas de atendimento e estoque. Neste projeto, atuei diretamente na programação da aplicação, ajudando a criar a interface e sendo o responsável por integrar toda a interface web com o banco de dados relacional.</p>
+                            <div class="mb-4">
+                                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">HTML</span>
+                                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">CSS</span>
+                                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">JavaScript</span>
+                                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">Bootstrap</span>
+                                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">PHP</span>
+                                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">SQL</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a href="https://github.com/antonio-ramalho/Med-Connect-2" class="btn btn-outline-primary btn-sm">Ver no GitHub <i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm h-100 bg-body-tertiary border border-secondary-subtle">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Agrinho 2023</h5>
+                            <h6 class="card-subtitle mb-3 text-primary">Front-end</h6>
+                            <p class="card-text text-body-secondary">Site informativo com o objetivo de conscientizar os usuários sobre a importância da reciclagem e a preservação do meio ambiente. A aplicação explica os diferentes tipos de reciclagem (mecânica, química e energética) e dá destaque prático ao descarte correto de pilhas e baterias. O projeto foi construído com semântica HTML estruturada e utiliza fotografias e elementos visuais 100% autorais.</p>
+                            <div class="mb-4">
+                                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">HTML</span>
+                                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">CSS</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a href="https://github.com/Fepostigo07/Agrinho2023" class="btn btn-outline-primary btn-sm">Ver no GitHub <i class="bi bi-github"></i></a>
+                                <a href="https://fepostigo07.github.io/Agrinho2023/" target="_blank" class="btn btn-primary btn-sm">Ver Site <i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm h-100 bg-body-tertiary border border-secondary-subtle">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Agrinho 2022</h5>
+                            <h6 class="card-subtitle mb-3 text-primary">Front-end</h6>
+                            <p class="card-text text-body-secondary">Projeto educativo desenvolvido para promover a conscientização ambiental. O site aborda conceitos sobre o aquecimento global, o efeito estufa, além de estruturar informações sobre causas, consequências e soluções em diferentes páginas. Como diferencial prático de front-end, a interface possui uma funcionalidade interativa via JavaScript que permite ao usuário trocar o tema da página.</p>
+                            <div class="mb-4">
+                                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">HTML</span>
+                                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">CSS</span>
+                                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a href="https://github.com/Fepostigo07/Agrinho-2022" class="btn btn-outline-primary btn-sm">Ver no GitHub <i class="bi bi-github"></i></a>
+                                <a href="https://fepostigo07.github.io/Agrinho-2022/" target="_blank" class="btn btn-primary btn-sm">Ver Site <i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm h-100 bg-body-tertiary border border-secondary-subtle">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Cinemax</h5>
+                            <h6 class="card-subtitle mb-3 text-primary">Back-end</h6>
+                            <p class="card-text text-body-secondary">Aplicação desenvolvida em equipe para simular a compra de ingressos, controle de sessões e gestão administrativa de um cinema. Minha contribuição principal focou no back-end, onde estruturei a lógica de programação em Python e implementei a manipulação e persistência dos dados utilizando arquivos JSON.</p>
+                            <div class="mb-4">
+                                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">Python</span>
+                                <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">JSON</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a href="https://github.com/antonio-ramalho/sistema-cinema" class="btn btn-outline-primary btn-sm">Ver no GitHub <i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5 bg-dark text-white">
+        <div class="container py-5 text-center">
+            <h2 class="mb-4 fw-bold">Vamos conversar?</h2>
+            <p class="mb-5 lead text-light-50">Estou disponível para novas oportunidades e desafios.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="https://www.linkedin.com/in/felipespostigo/" target="_blank" class="btn btn-outline-light btn-lg px-4"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Fepostigo07" target="_blank" class="btn btn-outline-light btn-lg px-4"><i class="bi bi-github"></i> GitHub</a>
+                <a href="mailto:fesilvapostigo2007@gmail.com" class="btn btn-primary btn-lg px-4"><i class="bi bi-envelope"></i> Enviar E-mail</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-secondary text-center py-3 border-top border-secondary">
+        <p class="mb-0 small">&copy; 2026 Felipe Postigo. Feito com Bootstrap 5.3.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
